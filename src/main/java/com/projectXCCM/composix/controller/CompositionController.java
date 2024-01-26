@@ -16,12 +16,14 @@ public class CompositionController {
 
     private final CompositionService service;
 
-    @GetMapping("/save")
+    @PostMapping("/save")
     public void saveComposition(@RequestBody Composition composition){
         service.saveComposition(composition); ;
     }
+    @CrossOrigin
     @GetMapping("/")
     public ResponseEntity<List<Composition>> getAll(){
+        System.out.println("He went here");
         return ResponseEntity.ok(service.getAllCompositions());
     }
 

@@ -29,4 +29,8 @@ public class Composition {
         this.author = author;
     }
 
+    public Composition(List<SimpleNotion> independentNotions) {
+        this.course = "Uploaded Courses";
+        this.independentNotions = independentNotions;
+    }
 }

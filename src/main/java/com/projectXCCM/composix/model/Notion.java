@@ -14,17 +14,14 @@ public class Notion {
 
     @Id
     private Integer id;
-    private String part;
-    private String chapter;
-    private String paragraph;
-    private String notion;
-    private String content;
 
-    public Notion(String chapter, String part, String paragraph, String notion, String content) {
-        this.chapter = chapter;
-        this.part = part;
-        this.paragraph = paragraph;
-        this.notion = notion;
+    private String title;
+    private String content;
+    private String owner;
+
+    public Notion(String title, String content, String owner) {
+        this.title = title;
         this.content = content;
+        this.owner = owner;
     }
 }

@@ -10,4 +10,5 @@ import java.util.List;
 public interface CompositionRepository extends MongoRepository<Composition, String> {
 
     List<Composition> findAllByAuthor(String author);
+
 }

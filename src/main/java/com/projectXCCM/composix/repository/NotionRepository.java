@@ -9,9 +9,10 @@ import java.util.Optional;
 @Repository
 public interface NotionRepository extends MongoRepository<Notion, String> {
 
-    List<Notion> findAllByParagraph(String paragraph);
-
-    List<Notion> findAllByPart(String part);
-
-    List<Notion> findAllByChapter(String chapter);
+    List<Notion> findAllByOwner(String owner);
+//    List<Notion> findAllByParagraph(String paragraph);
+//
+//    List<Notion> findAllByPart(String part);
+//
+//    List<Notion> findAllByChapter(String chapter);
 }
